@@ -4,9 +4,9 @@ import Greetings from './components/Greetings';
 
 function App() {
   return (
-      <Routes>
-          <Route path="/" element={<Greetings />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Greetings />} />
+    </Routes>
   );
 }
 

@@ -6,8 +6,6 @@ const Greetings = () => {
   const dispatch = useDispatch();
   const greetingsData = useSelector((state) => state.greeting);
 
-  console.log(greetingsData);
-
   useEffect(() => {
     dispatch(getGreetings());
   }, [dispatch]);

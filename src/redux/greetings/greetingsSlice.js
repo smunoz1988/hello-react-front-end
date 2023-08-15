@@ -1,7 +1,7 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const url = "http://localhost:3001/api/v1/greetings";
+const url = 'http://localhost:3001/api/v1/greetings';
 
 const initialState = {
   loading: false,
@@ -15,7 +15,7 @@ export const getGreetings = createAsyncThunk('greeting/getGreetings', () => axio
   .catch((err) => err));
 
 const greetingSlice = createSlice({
-  name: "greeting",
+  name: 'greeting',
   initialState,
   extraReducers: (builder) => {
     builder.addCase(getGreetings.pending, (state) => {
